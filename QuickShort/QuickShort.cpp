@@ -74,6 +74,17 @@ void q_short(int low, int high)
 		}
 		cmp_count++;
 		if (i < j)//step9
+		{
+			// swap the element at index i whit the element at index j
+			swap(i, j);
+		}
+	}
+
+	if (low < j) { //step11
+		//swap the pivot element with the element at index j
+		swap(low, j);
+
+	}
 	
 	
 
