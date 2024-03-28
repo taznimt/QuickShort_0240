@@ -85,6 +85,8 @@ void q_short(int low, int high)
 		swap(low, j);
 
 	}
+	//recursive call to sort the Left sub array
+	q_short(low, j - 1); //step12
 	
 	
 
