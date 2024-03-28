@@ -94,43 +94,6 @@ void q_short(int low, int high)
 
 }
 
-void display() {
-	cout << "\n===================" << endl;
-	cout << "Sorted Array" << endl;
-	cout << "===================" << endl;
-
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << " ";
-
-	}
-
-	cout << "\n\nNumber of comparations: " << cmp_count << endl;
-	cout << "Number of data movements: " << mov_count << endl;
-
-}
-int main()
-{
-	char ch;
-
-	do {
-		input();
-		q_short(0, n - 1);
-		display();
-		cout << "\n\nDo you want to continue? (y/n): ";
-		cin >> ch;
-		if (ch == 'n' || ch == 'N')
-			break;
-
-		system("pause");
-		system("cls");
-
-
-	} while (true);
-
-	return 0;
-
-}
 
 
 	
